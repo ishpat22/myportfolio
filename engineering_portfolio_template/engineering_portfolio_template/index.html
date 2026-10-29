@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering student portfolio showcasing design, simulation, manufacturing, and validation projects.">
+  <title>Ishaan Patel | Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy" id="about">
+        <p class="eyebrow">Materials Science and Engineering @ University of Toronto</p>
+        <h1>Ishaan Patel</h1>
+        <p class="intro">
+          Hi, I’m a third-year Materials Science and Engineering student passionate about end-to-end engineering design, from concept development and simulation to manufacturing and physical validation. With hands-on experience in composite manufacturing, I aim to bridge material selection, structural analysis, and manufacturability to develop optimized, high-performance components. I’m also interested in failure analysis, understanding how and why components fail, and applying those insights to improve designs and create more reliable engineering solutions. I’m excited to continue developing my skills and applying materials engineering principles to design, analyze, and manufacture better-performing, more reliable engineering systems.       
+        </p>
+        <div class="specialties">
+          <span>Materials Science</span>
+          <span>Structural Analysis &amp; FEA</span>
+          <span>Design &amp; CAD</span>
+          <span>Composites &amp; Aerospace</span>
+          <span>Failure Analysis</span>
+        </div>
+      </div>
+      <div class="hero-image image-frame">
+        <img src="./Images/main_menu.jpeg" alt="Main Menu Photo"
+             onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+        <span class="image-placeholder">Main Menu Photo<br><small>images/hero.jpg</small></span>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px;">
+        <div>
+          <p class="eyebrow">My Showcase</p>
+          <h2 style="margin-bottom: 0;">Engineering projects</h2>
+        </div>
+        <button id="downloadPdfBtn" class="pdf-download-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download PDF Summary
+        </button>
+      </div>
+      <p class="section-intro">Here's what I've worked on:</p>
+
+      <!-- PROJECT 01 -->
+      <article class="project-card">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide active">
+              <div class="project-image image-frame">
+                <img src="./Images/initial_brakemount.png" alt="Initial Brake Mount" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Initial Brake Mount<br><small>images/project-01.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/initial_brakemount_sim.png" alt="Initial Brake Mount Simulation" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">FEA Stress Map<br><small>images/project-01-2.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/topology_optimized.png" alt="Topology Optimized Design" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Topology Optimized<br><small>images/project-01-3.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/final_brakemount.png" alt="Final Brake Mount" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Final Brake Mount<br><small>images/project-01-4.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/final_brakemount_sim.png" alt="Final Brake Mount Simulation" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Final Simulation<br><small>images/project-01-5.jpg</small></span>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous Slide">❮</button>
+          <button class="carousel-btn next" aria-label="Next Slide">❯</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="project-copy">
+          <p class="project-number">University of Toronto Supermileage Team</p>
+          <h3>Topology Optimized Carbon Fibre Brake Mount Design</h3>
+          <div class="tags"><span>SolidWorks</span><span>ANSYS Structural</span><span>Carbon Fiber Manufacturing</span><span>DFM</span><span>3D Printing</span></div>
+          <p>Designed and topology-optimized a carbon-fibre brake mount using SolidWorks CAD and ANSYS finite element analysis to minimize material usage while maintaining structural integrity under working loads.</p>
+          <button class="text-link open-modal-btn" data-modal="modal-project-1">Read project details <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="metrics">
+          <p class="metric-label">Key results</p>
+          <div class="metric-grid">
+            <div class="metric"><strong>50%</strong><span>Mass Reduction</span></div>
+            <div class="metric"><strong>23%</strong><span>Reduction in Max Stress</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 02 -->
+      <article class="project-card">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide active">
+              <div class="project-image image-frame">
+                <img src="./Images/figure2-3.png" alt="Loads and Boundary Conditions" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Loads & Boundary Conditions<br><small>images/figure2-3.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/mesh_convergence.png" alt="Mesh Convergence Verification" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Mesh Convergence<br><small>images/mesh_convergence.png</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/Steel_optimized.png" alt="Preliminary Material Optimization" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Material Optimization<br><small>images/Steel_optimized.png</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/reiterated_optimized.png" alt="Reiterated Optimization" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Reiterated Optimization<br><small>images/reiterated_optimized.png</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/final_stress.png" alt="Final Equivalent Stress Distribution" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Final Equivalent Stress<br><small>images/final_stress.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/final_strain.png" alt="Final Equivalent Strain Distribution" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Final Equivalent Strain<br><small>images/final_strain.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/final__pressure.png" alt="Final Optimal Thickness & Dimensions" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Final Validation Dimensions<br><small>images/final__pressure.png</small></span>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous Slide">❮</button>
+          <button class="carousel-btn next" aria-label="Next Slide">❯</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="project-copy">
+          <p class="project-number">Mechanics of Solid Materials (MSE222)</p>
+          <h3>Gas Cylinder Structural Analysis</h3>
+          <div class="tags"><span>ANSYS Structural</span><span>SolidWorks</span></div>
+          <p>Optimized a pressurized gas cylinder through ANSYS structural analysis and iterative material and wall-thickness selection, balancing mass and strain while identifying the onset of plastic deformation and opportunities to reduce stress concentrations.</p>
+          <button class="text-link open-modal-btn" data-modal="modal-project-2">Read project details <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="metrics">
+          <p class="metric-label">Key results</p>
+          <div class="metric-grid">
+            <div class="metric"><strong>13%</strong><span>Reduction in Max Stress</span></div>
+            <div class="metric"><strong>11%</strong><span>Reduction in Max Strain</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 04: MATERIALS CHARACTERIZATION -->
+      <article class="project-card project-characterization">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide active">
+              <div class="project-image image-frame">
+                <img src="./Images/xrd-a.png" alt="X-Ray Diffraction Peak Analysis" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">XRD Crystallography<br><small>images/xrd_sample.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/grainsize-sem.png" alt="SEM Microstructure & Line Intercept Analysis" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">SEM Microstructure<br><small>images/sem_micrograph.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/peaks-tem.png" alt="TEM EDS Composition Analysis" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">TEM / SAED Pattern<br><small>images/tem_diffraction.jpg</small></span>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous Slide">❮</button>
+          <button class="carousel-btn next" aria-label="Next Slide">❯</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="project-copy">
+          <p class="project-number">Structure and Characterization of Materials (MSE219)</p>
+          <h3>Microstructural Characterization & Crystallography</h3>
+          <div class="tags"><span>Materials Characterization</span><span>Microscopy</span></div>
+          <p>Investigated crystal structures, phase transformations, and elemental distributions across metallic and composite specimens utilizing an advanced suite of characterization techniques including X-ray Diffraction, Scanning Electron Microscopy, and Transmission Electron Microscopy.</p>
+          <button class="text-link open-modal-btn" data-modal="modal-project-4">Read project details <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="metrics">
+          <p class="metric-label">Key result</p>
+          <div class="metric-grid">
+            <div class="metric"><strong style="font-size: 2rem; display: block;">XRD, SEM,<br>TEM</strong><span>Microstructural Characterization Used</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 05: CHESTNUT WELLNESS SPACE CDS -->
+      <article class="project-card project-cds">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide active">
+              <div class="project-image image-frame">
+                <img src="./Images/stakeholder.png" alt="Chestnut Wellness Space Conceptual Render" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Conceptual Render<br><small>images/cds_render_1.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/sitevisit-drawing.png" alt="Morphological Chart & Concept Generation" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Morphological Chart<br><small>images/cds_morph_chart.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/blackbox.png" alt="Pugh Matrix Evaluation Table" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Pugh Matrix Evaluation<br><small>images/cds_pugh_matrix.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/multivote.png" alt="Pugh Matrix Evaluation Table" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Pugh Matrix Evaluation<br><small>images/cds_pugh_matrix.jpg</small></span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="project-image image-frame">
+                <img src="./Images/pugh.png" alt="Pugh Matrix Evaluation Table" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+                <span class="image-placeholder">Pugh Matrix Evaluation<br><small>images/cds_pugh_matrix.jpg</small></span>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous Slide">❮</button>
+          <button class="carousel-btn next" aria-label="Next Slide">❯</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="project-copy">
+          <p class="project-number">Engineering Strategies &amp; Practice II (APS112)</p>
+          <h3>Chestnut Residence Mailroom Redevelopment: Conceptual Design Specification</h3>
+          <div class="tags"><span>Project Management</span></div>
+          <p>Established conceptual design specifications and evaluated multi-concept architectural interventions to redevelop the UofT Chestnut Residence mailroom into an accessible, acoustic-optimized student wellness facility.</p>
+          <button class="text-link open-modal-btn" data-modal="modal-project-5">Read project details <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="metrics">
+          <p class="metric-label">Key results</p>
+          <div class="metric-grid">
+            <div class="metric"><strong style="white-space: nowrap; font-size: clamp(1.8rem, 2.8vw, 2.8rem);">60 &rarr; 3</strong><span>Ideas to Final Options</span></div>
+            <div class="metric"><strong style="white-space: nowrap; font-size: clamp(1.8rem, 2.8vw, 2.8rem);">125&times;</strong><span>Amplitude Reduction</span></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- INLINE MODAL DIALOG FOR PROJECT 1 -->
+    <dialog class="project-modal" id="modal-project-1">
+      <div class="modal-content">
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+        <p class="project-number">PROJECT 01 — DETAILED REPORT</p>
+        <h2>Topology Optimized Carbon Fibre Brake Mount Design</h2>
+        <div class="tags"><span>SolidWorks</span><span>ANSYS Structural</span><span>Carbon Fiber Manufacturing</span><span>DFM</span><span>3D Printing</span></div>
+        <hr class="modal-divider">
+        
+        <h3>Problem Statement</h3>
+        <p>The previous year’s brake mount design exhibited excessive mass and stress concentrations under a combined 343 N per-wheel load (derived from vehicle weight distribution and braking forces). Additionally, the geometry had to strictly adhere to the manufacturing constraints of mold-based carbon-fibre forging.</p>
+        
+        <h3>Objective</h3>
+        <p>Design and optimize a lightweight carbon-fibre brake mount that reduces overall mass and lowers maximum von Mises stress compared to the legacy design, while ensuring full compatibility with 3D-printed carbon forging mold manufacturing processes.</p>
+
+        <h3>Visual Design Workflow</h3>
+        <p>The project followed a 5-step iterative workflow from legacy baseline to final validated component:</p>
+        
+        <div class="workflow-grid">
+          <div class="workflow-step">
+            <span class="workflow-num">01</span>
+            <img src="./Images/initial_brakemount.png" alt="Initial Brake Mount" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>Initial Baseline CAD</h4>
+              <p>Modeled baseline geometry in SolidWorks using researched low stress geometries to establish mounting interfaces and manufacturing constraints.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="workflow-num">02</span>
+            <img src="./Images/initial_brakemount_sim.png" alt="Initial Simulation" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>Baseline FEA Analysis</h4>
+              <p>Simulated 343 N loading conditions in ANSYS, identifying severe stress concentrations and high mass.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="workflow-num">03</span>
+            <img src="./Images/topology_optimized.png" alt="Topology Optimization" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>Topology Optimization</h4>
+              <p>Executed optimization algorithms to strip 50% of material from low-stress neutral axis regions.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="workflow-num">04</span>
+            <img src="./Images/final_brakemount.png" alt="Final Part" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>Final Part Redesign</h4>
+              <p>Refined optimized geometry for mold-based carbon-fibre forging and manufacturing constraints.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="workflow-num">05</span>
+            <img src="./Images/final_brakemount_sim.png" alt="Final Simulation" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>Final Validation</h4>
+              <p>Verified a 50% mass reduction and 23% lower peak stress under identical load conditions.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </dialog>
+
+    <!-- INLINE MODAL DIALOG FOR PROJECT 2 -->
+    <dialog class="project-modal" id="modal-project-2">
+      <div class="modal-content">
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+        <p class="project-number">PROJECT 02 — DETAILED REPORT</p>
+        <h2>Pressure Vessel Optimization & FEA Analysis</h2>
+        <div class="tags"><span>ANSYS Structural</span><span>SolidWorks</span></div>
+        <hr class="modal-divider">
+        
+        <h3>Problem Statement</h3>
+        <p>Conventional pressure vessel design often relies on non-optimized wall thicknesses that introduce excessive structural weight or localized stress failures under operating pressures. The challenge lies in systematically evaluating candidate materials and fine-tuning vessel geometry to balance structural safety and weight efficiency.</p>
+        
+        <h3>Objective &amp; Optimization Methodology</h3>
+        <p>Evaluate structural performance across varying wall thicknesses using ANSYS static structural analysis and mesh convergence verification. To systematically determine the optimal balance between weight savings and structural compliance, we employed a <strong>Mass-Strain Product Optimization Framework</strong>. By multiplying the total component mass by the peak equivalent elastic strain, this metric penalizes designs that are excessively heavy (high mass) as well as those operating too close to their deformation limits (high strain). Minimizing this combined product isolates the true global optimum where structural rigidity and weight efficiency intersect.</p>
+
+        <h3>Visual Design Workflow</h3>
+        <p>The project followed a structured 5-step engineering process from initial load setup to final validated stress-strain performance and dimensions:</p>
+        
+        <div class="workflow-grid">
+          <div class="workflow-step">
+            <span class="workflow-num">01</span>
+            <img src="./Images/figure2-3.png" alt="Loads and Boundary Conditions" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>Loads & Boundary Conditions</h4>
+              <p>Applied 15.1685 MPa internal pressure and fixed supports at the cylinder base and top valve neck.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="workflow-num">02</span>
+            <img src="./Images/mesh_convergence.png" alt="Mesh Convergence Verification" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>Mesh Convergence Verification</h4>
+              <p>Conducted manual refinement on the high-stress inner face until maximum stress variance flattened to 0.0097%.</p>
+            </div>
+          </div>
+
+          <!-- STEP 03 WITH CUSTOM MULTI-GRAPH COMPARISON TRIGGER -->
+          <div class="workflow-step">
+            <span class="workflow-num">03</span>
+            <img src="./Images/Steel_optimized.png" alt="Preliminary Material Optimization" class="workflow-thumb comparison-trigger" data-comparison="material-comparison" style="cursor: pointer;" title="Click to view all 3 candidate material graphs">
+            <div>
+              <h4>Preliminary Material Optimization</h4>
+              <p>Evaluated mass-strain product trajectories for Aluminum 6061, 304 Stainless Steel, and AISI 4130 Steel across 8–12 mm integer steps, identifying AISI 4130 as yielding the lowest minimum. <span style="display:inline-block; margin-top:4px; font-size:0.75rem; color:var(--blue); font-weight:600; cursor:pointer;" class="comparison-trigger" data-comparison="material-comparison">Click image to compare all 3 materials ↗</span></p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="workflow-num">04</span>
+            <img src="./Images/reiterated_optimized.png" alt="Reiterated Optimization" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>Reiterated Optimization</h4>
+              <p>Performed high-resolution 0.1 mm step fine-tuning on AISI 4130 Steel to isolate the true global minimum.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <span class="workflow-num">05</span>
+            <div style="display: flex; flex-direction: column; gap: 8px; width: 120px; flex-shrink: 0;">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <img src="./Images/final_stress.png" alt="Stress" class="workflow-thumb lightbox-trigger" style="width: 50px; height: 35px; object-fit: cover;">
+                <span style="font-size: 0.7rem; color: #555;">Stress</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <img src="./Images/final_strain.png" alt="Strain" class="workflow-thumb lightbox-trigger" style="width: 50px; height: 35px; object-fit: cover;">
+                <span style="font-size: 0.7rem; color: #555;">Strain</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <img src="./Images/final__pressure.png" alt="Thickness" class="workflow-thumb lightbox-trigger" style="width: 50px; height: 35px; object-fit: cover;">
+                <span style="font-size: 0.7rem; color: #555;">11.4 mm</span>
+              </div>
+            </div>
+            <div>
+              <h4>Final Validation & Dimensions</h4>
+              <p>Established the final optimal 11.4 mm wall thickness, achieving a 13% reduction in max stress and an 11% reduction in max strain compared to original baseline dimensions, validating stress and strain distributions against yield safety limits.</p>            </div>
+          </div>
+        </div>
+
+      </div>
+    </dialog>
+
+    <!-- INLINE MODAL DIALOG FOR PROJECT 3 (MATERIALS CHARACTERIZATION) -->
+    <dialog class="project-modal" id="modal-project-4">
+      <div class="modal-content">
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+        <p class="project-number">PROJECT 03 — DETAILED REPORT</p>
+        <h2>Microstructural Characterization &amp; Crystallography</h2>
+        <div class="tags"><span>Materials Characterization</span><span>Microscopy</span></div>
+        <hr class="modal-divider">
+        
+        <h3>Scope &amp; Overview</h3>
+        <p>This portfolio showcase summarizes three core laboratory investigations completed over the semester for MSE219 (Structure and Characterization of Materials). The coursework focused on evaluating structure-property relationships in metallic powders, alloys, and composite specimens through advanced characterization techniques: X-ray Diffraction (XRD) for crystal indexing and lattice parameter determination, Scanning Electron Microscopy (SEM) coupled with quantitative line-intercept methods for grain size and phase distribution analysis, and Transmission Electron Microscopy (TEM) using selected area electron diffraction (SAED) and energy-dispersive X-ray spectroscopy (EDS) to examine thermal annealing microstructures and quantify elemental mass ratios.</p>
+
+        <h3>Laboratory Workflow &amp; Technical Breakdown</h3>
+        <p>The semester coursework followed a rigorous 3-stage characterization and quantitative analysis sequence:</p>
+        
+        <div class="workflow-grid">
+          <!-- LAB 1: XRD -->
+          <div class="workflow-step">
+            <span class="workflow-num">01</span>
+            <img src="./Images/xrd-a.png" alt="XRD Diffraction Peak Analysis" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>1. X-Ray Diffraction (XRD) &amp; Crystallography</h4>
+              <p>Utilized a Rigaku MiniFlex 600 diffractometer with Cu-K&alpha; radiation. Processed raw diffraction data and generated calibrated intensity vs. 2&theta; graphs using custom Python scripts (NumPy, Matplotlib), applying Bragg's Law and structure factor calculations to index peaks from 20&deg; to 100&deg; 2&theta; and fingerprint FCC Nickel, BCC Iron, and HCP Cobalt.</p>
+            </div>
+          </div>
+
+          <!-- LAB 2: SEM -->
+          <div class="workflow-step">
+            <span class="workflow-num">02</span>
+            <img src="./Images/grainsize-sem.png" alt="SEM Microstructure & Line Intercept Analysis" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>2. Scanning Electron Microscopy (SEM)</h4>
+              <p>Evaluated topography and phase contrast for Cu, NiCo, and Ni-PTFE using an SU7000 SEM with Upper, PDBSE, and Lower detectors. Performed a quantitative 5-line intercept method on Copper PDBSE micrographs to calculate a mean grain size of 0.54 &mu;m.</p>
+            </div>
+          </div>
+
+          <!-- LAB 3: TEM -->
+          <div class="workflow-step">
+            <span class="workflow-num">03</span>
+            <img src="./Images/peaks-tem.png" alt="TEM EDS Composition Analysis" class="workflow-thumb lightbox-trigger">
+            <div>
+              <h4>3. Transmission Electron Microscopy (TEM) &amp; EDS</h4>
+              <p>Investigated electrojet-polished Ni-Co thin foils annealed at 200&ndash;400&deg;C using Bright Field (BF), Dark Field (DF), and Selected Area Electron Diffraction (SAED). Acquired Energy-Dispersive X-ray Spectroscopy (EDS) spectra to document microstructural evolution to ordered single-crystal grains at 400&deg;C and applied Cliff-Lorimer quantification to determine alloy composition ratios.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    
+    <!-- INLINE MODAL DIALOG FOR PROJECT 5 (APS112 CDS) -->
+    <dialog class="project-modal" id="modal-project-5">
+      <div class="modal-content">
+        <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+        <p class="project-number">PROJECT 04 — DETAILED REPORT</p>
+        <h2>Chestnut Residence Mailroom Redevelopment</h2>
+        <div class="tags"><span>Project Management</span></div>
+        <hr class="modal-divider">
+        
+        <h3>Scope &amp; Overview</h3>
+        <p>This project delivered a comprehensive Conceptual Design Specification (CDS) to redevelop the underutilized Chestnut Student Residence mailroom into an accessible, multipurpose wellness space. The project established primary and secondary functions using black-box boundary modeling, mapped client and stakeholder metrics, generated 60 distinct design combinations via morphological analysis, and executed systematic feasibility, multi-voting, and Pugh Matrix decision matrix evaluations to select top conceptual designs.</p>
+
+        <h3>Visual Design Workflow</h3>
+        <p>The CDS followed a structured engineering design process from initial site investigation to final concept selection:</p>
+        
+        <div class="workflow-grid">
+          <!-- STEP 1: PROBLEM STATEMENT & STAKEHOLDER MAPPING -->
+          <div class="workflow-step">
+            <span class="workflow-num">01</span>
+            <div class="workflow-thumb image-frame">
+              <img src="./Images/stakeholder.png" alt="Stakeholder Mapping & Requirements" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+              <span class="image-placeholder" style="font-size: 0.65rem; padding: 4px;">Stakeholder Map<br><small>cds_stakeholder.jpg</small></span>
+            </div>
+            <div>
+              <h4>1. Problem Definition &amp; Stakeholder Mapping</h4>
+              <p>Defined project scope alongside primary client requirements (Residence Wellness Coordinator) and key stakeholders (Chestnut residents, maintenance staff, residence security). Established quantitative objectives for acoustic isolation, thermal regulation, and mood adjustable lighting.</p>
+            </div>
+          </div>
+
+          <!-- STEP 2: DATA COLLECTION & SITE VISIT -->
+          <div class="workflow-step">
+            <span class="workflow-num">02</span>
+            <div class="workflow-thumb image-frame">
+              <img src="./Images/sitevisit-drawing.png" alt="Preliminary Site Drawing" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+              <span class="image-placeholder" style="font-size: 0.65rem; padding: 4px;">Site Visit Data<br><small>cds_site_visit.jpg</small></span>
+            </div>
+            <div>
+              <h4>2. Data Collection via Site Visit</h4>
+              <p>Conducted an on-site audit of the Chestnut Residence mailroom to record spatial dimensions, existing structural obstructions, traffic bottlenecks, lighting levels, and ambient noise baselines. This primary data collection directly informed our constraints and acoustic attenuation targets.</p>
+            </div>
+          </div>
+
+          <!-- STEP 3: FUNCTIONAL ANALYSIS & MORPHOLOGICAL SYNTHESIS -->
+          <div class="workflow-step">
+            <span class="workflow-num">03</span>
+            <div class="workflow-thumb image-frame">
+              <img src="./Images/blackbox.png" alt="Black Box Diagram" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+              <span class="image-placeholder" style="font-size: 0.65rem; padding: 4px;">Morph Chart<br><small>cds_morph_chart.jpg</small></span>
+            </div>
+            <div>
+              <h4>3. Functional Analysis &amp; Morphological Synthesis</h4>
+              <p>Constructed a Functional Black Box diagram to isolate inputs and energy flows, establishing the primary function: transform underutilized mailroom space into a wellness environment. Built a comprehensive Morphological Chart spanning key secondary functions to generate 60 unique candidate design combinations.</p>
+            </div>
+          </div>
+
+          <!-- STEP 4: FEASIBILITY & MULTI-VOTING FILTERING -->
+          <div class="workflow-step">
+            <span class="workflow-num">04</span>
+            <div class="workflow-thumb image-frame">
+              <img src="./Images/multivote.png" alt="Multi-Voting & Feasibility Analysis" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+              <span class="image-placeholder" style="font-size: 0.65rem; padding: 4px;">Multi-Voting<br><small>cds_multivoting.jpg</small></span>
+            </div>
+            <div>
+              <h4>4. Feasibility Screening &amp; Multi-Voting Filter</h4>
+              <p>Subjected all 60 generated concepts to strict physical, structural, and budget constraint checks based on site visit measurements. Applied a 2-stage team multi-voting protocol to filter candidates down to top-performing options for detailed evaluation.</p>
+            </div>
+          </div>
+
+          <!-- STEP 5: PUGH MATRIX & CONCEPT SELECTION -->
+          <div class="workflow-step">
+            <span class="workflow-num">05</span>
+            <div class="workflow-thumb image-frame">
+              <img src="./Images/pugh.png" alt="Pugh Matrix Decision Evaluation" class="lightbox-trigger" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');">
+              <span class="image-placeholder" style="font-size: 0.65rem; padding: 4px;">Pugh Matrix<br><small>cds_pugh_matrix.jpg</small></span>
+            </div>
+            <div>
+              <h4>5. Pugh Matrix Evaluation &amp; Final Selection</h4>
+              <p>Evaluated candidate designs against established objectives using a Pugh Decision Matrix with Datum comparisons, successfully narrowing down to 3 finalized alternate design options optimized for acoustic privacy and confidentiality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- LIGHTBOX MODAL FOR FULL IMAGE VIEWING -->
+    <dialog class="lightbox-modal" id="imageLightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close full image">&times;</button>
+        <img id="lightboxImg" src="" alt="Full Resolution View">
+        <p id="lightboxCaption" style="margin-top: 10px; font-size: 0.85rem; color: #a5b4fc; text-align: center;"></p>
+      </div>
+    </dialog>
+
+    <!-- COMPARISON LIGHTBOX MODAL FOR STEP 03 (ENLARGED GRAPHS) -->
+    <dialog class="lightbox-modal" id="comparisonLightbox" style="max-width: 1050px; width: 95vw;">
+      <div class="lightbox-content" style="align-items: stretch; padding: 32px;">
+        <button class="lightbox-close" aria-label="Close comparison view">&times;</button>
+        <h3 style="color: white; margin-bottom: 4px; font-family: Manrope, sans-serif; font-size: 1.4rem;">Preliminary Material Optimization Comparison</h3>
+        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 24px;">Comparing mass-strain trajectories across candidate materials (8–12 mm integer increments).</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+          <!-- Al 6061 -->
+          <div style="background: #1e3a5f; border-radius: 10px; padding: 16px; text-align: center; border: 1px solid #2e517d; display: flex; flex-direction: column; justify-content: space-between;">
+            <img src="./Images/Aluminum_optimize.png" alt="Aluminum 6061 Optimization" style="width: 100%; height: 210px; object-fit: contain; background: white; border-radius: 6px;">
+            <p style="color: #cbd5e1; font-size: 0.95rem; font-weight: 600; margin: 14px 0 2px;">Aluminum 6061</p>
+          </div>
+
+          <!-- AISI 4130 (Highlighted as Lowest) -->
+          <div style="background: #1e3a5f; border-radius: 10px; padding: 16px; text-align: center; border: 2px solid #60a5fa; box-shadow: 0 0 20px rgba(96, 165, 250, 0.4); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="background: #2563eb; color: white; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em;">Selected Material</div>
+              <img src="./Images/Steel_optimized.png" alt="AISI 4130 Steel Optimization" style="width: 100%; height: 185px; object-fit: contain; background: white; border-radius: 6px;">
+            </div>
+            <p style="color: #60a5fa; font-size: 1rem; font-weight: 700; margin: 12px 0 2px;">AISI 4130 Steel (Lowest Mass-Strain)</p>
+          </div>
+
+          <!-- 304 Stainless Steel -->
+          <div style="background: #1e3a5f; border-radius: 10px; padding: 16px; text-align: center; border: 1px solid #2e517d; display: flex; flex-direction: column; justify-content: space-between;">
+            <img src="./Images/stainless_optimize.png" alt="304 Stainless Steel Optimization" style="width: 100%; height: 210px; object-fit: contain; background: white; border-radius: 6px;">
+            <p style="color: #cbd5e1; font-size: 0.95rem; font-weight: 600; margin: 14px 0 2px;">304 Stainless Steel</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <section class="section process-section" id="process">
+      <p class="eyebrow">The Engineering Process</p>
+      <h2>From problem to solution</h2>
+      <p class="section-intro">How I currently approach engineering problems</p>
+      <div class="timeline">
+        <article class="timeline-step">
+          <div class="step-marker"><span>01</span><b>⌕</b></div>
+          <h3>Understand</h3>
+          <p>Define the problem, requirements, constraints, and success criteria without assuming a solution.</p>
+        </article>
+        <article class="timeline-step">
+          <div class="step-marker"><span>02</span><b>◇</b></div>
+          <h3>Design &amp; model</h3>
+          <p>Develop concepts, CAD geometry, material choices, and assumptions based on research and knowledge.</p>
+        </article>
+        <article class="timeline-step">
+          <div class="step-marker"><span>03</span><b>∿</b></div>
+          <h3>Analyze</h3>
+          <p>Use calculations, simulation, and engineering judgement to predict performance.</p>
+        </article>
+        <article class="timeline-step">
+          <div class="step-marker"><span>04</span><b>⚙</b></div>
+          <h3>Build &amp; test</h3>
+          <p>Manufacture a prototype or run tests where possible; record the evidence.</p>
+        </article>
+        <article class="timeline-step">
+          <div class="step-marker"><span>05</span><b>↻</b></div>
+          <h3>Iterate</h3>
+          <p>Compare results against requirements and improve the design.</p>
+        </article>
+        <article class="timeline-step">
+          <div class="step-marker"><span>06</span><b>✓</b></div>
+          <h3>Validate</h3>
+          <p>Summarize what worked, what remains uncertain, and the final outcome.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-contact">
+      <div id="skills">
+        <p class="eyebrow">Technical Toolkit</p>
+        <h2>Tools &amp; technologies</h2>
+        <div class="skill-list">
+          <span>SolidWorks (Certified Associate)</span><span>ANSYS Structural</span><span>Python</span><span>Java</span>
+          <span>ANSYS Granta</span><span>Carbon Fiber Manufacturing</span><span>3D Printing</span><span>Machining</span>
+          <span>DFM</span><span>Microscopy</span><span>Materials Characterization</span><span>Project Management</span>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let's connect.</h2>
+        <p>I'm open to engineering internships, collaborations, and conversations about engineering design and analysis.</p>
+        <a href="mailto:ishaan.patel@mail.utoronto.ca">ishaan.patel@mail.utoronto.ca</a>
+        <a href="https://linkedin.com/in/ish-pat" target="_blank" rel="noreferrer">LinkedIn profile ↗</a>      </div>
+    </section>
+  </main>
+
+  <!-- DEDICATED PRINT CONTAINER FOR PDF GENERATION -->
+  <div id="pdfPrintContainer">
+    <!-- PAGE 1: PROJECT 1 -->
+    <div class="print-page">
+      <div class="print-page-content">
+        <div class="header-masthead">
+          <p class="doc-eyebrow">Ishaan Patel • Engineering Portfolio</p>
+          <h1 class="doc-title">Detailed Project Reports &amp; Workflows</h1>
+          <p class="doc-subtitle">Materials Science &amp; Engineering | University of Toronto</p>
+        </div>
+        <div class="project-header-block">
+          <p class="project-code">Project 01 • University of Toronto Supermileage Team</p>
+          <h2 class="project-title-text">Topology Optimized Carbon Fibre Brake Mount Design</h2>
+          <div class="tag-container">
+            <span class="tag">SolidWorks</span><span class="tag">ANSYS Structural</span><span class="tag">Carbon Fiber Manufacturing</span><span class="tag">DFM</span><span class="tag">3D Printing</span>
+          </div>
+        </div>
+        <div class="metrics-summary-strip">
+          <div class="metric-item"><div class="metric-val">50%</div><div class="metric-lbl">Mass Reduction</div></div>
+          <div class="metric-item"><div class="metric-val">23%</div><div class="metric-lbl">Stress Reduction</div></div>
+          <div class="metric-item"><div class="metric-val">343 N</div><div class="metric-lbl">Design Load Case</div></div>
+        </div>
+        <h3 class="section-heading">Visual Design Workflow</h3>
+        <div class="workflow-list">
+          <div class="workflow-item">
+            <div class="step-num-badge">01</div>
+            <div class="step-img-box"><img src="./Images/initial_brakemount.png" alt="Baseline CAD" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Initial Baseline CAD</h4><p>Modeled baseline geometry in SolidWorks using researched low stress geometries to establish mounting interfaces and manufacturing constraints.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">02</div>
+            <div class="step-img-box"><img src="./Images/initial_brakemount_sim.png" alt="Baseline FEA" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Baseline FEA Analysis</h4><p>Simulated 343 N loading conditions in ANSYS, identifying severe stress concentrations and high mass.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">03</div>
+            <div class="step-img-box"><img src="./Images/topology_optimized.png" alt="Topology Optimization" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Topology Optimization</h4><p>Executed optimization algorithms to strip 50% of material from low-stress neutral axis regions.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">04</div>
+            <div class="step-img-box"><img src="./Images/final_brakemount.png" alt="Final Redesign" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Final Part Redesign</h4><p>Refined optimized geometry for mold-based carbon-fibre forging and manufacturing constraints.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">05</div>
+            <div class="step-img-box"><img src="./Images/final_brakemount_sim.png" alt="Final Validation" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Final Validation</h4><p>Verified a 50% mass reduction and 23% lower peak stress under identical load conditions.</p></div>
+          </div>
+        </div>
+      </div>
+      <footer class="print-page-footer"><span>Ishaan Patel • Detailed Engineering Project Reports</span><span>Page 1 of 4</span></footer>
+    </div>
+
+    <!-- PAGE 2: PROJECT 2 -->
+    <div class="print-page">
+      <div class="print-page-content">
+        <div class="project-header-block">
+          <p class="project-code">Project 02 • Mechanics of Solid Materials (MSE222)</p>
+          <h2 class="project-title-text">Gas Cylinder Structural Analysis &amp; Optimization</h2>
+          <div class="tag-container">
+            <span class="tag">ANSYS Structural</span><span class="tag">SolidWorks</span>
+          </div>
+        </div>
+        <div class="metrics-summary-strip">
+          <div class="metric-item"><div class="metric-val">13%</div><div class="metric-lbl">Stress Reduction</div></div>
+          <div class="metric-item"><div class="metric-val">11%</div><div class="metric-lbl">Strain Reduction</div></div>
+          <div class="metric-item"><div class="metric-val">11.4 mm</div><div class="metric-lbl">Optimal Thickness</div></div>
+        </div>
+        <h3 class="section-heading">Visual Design Workflow</h3>
+        <div class="workflow-list">
+          <div class="workflow-item">
+            <div class="step-num-badge">01</div>
+            <div class="step-img-box"><img src="./Images/figure2-3.png" alt="Boundary Conditions" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Loads &amp; Boundary Conditions</h4><p>Applied 15.1685 MPa internal pressure and fixed supports at the cylinder base and top valve neck.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">02</div>
+            <div class="step-img-box"><img src="./Images/mesh_convergence.png" alt="Mesh Convergence" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Mesh Convergence Verification</h4><p>Conducted manual refinement on the high-stress inner face until maximum stress variance flattened to 0.0097%.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">03</div>
+            <div class="step-img-box"><img src="./Images/Steel_optimized.png" alt="Material Optimization" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Preliminary Material Optimization</h4><p>Evaluated mass-strain product trajectories for Aluminum 6061, 304 Stainless Steel, and AISI 4130 Steel across 8–12 mm integer steps, identifying AISI 4130 as yielding the lowest minimum.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">04</div>
+            <div class="step-img-box"><img src="./Images/reiterated_optimized.png" alt="Reiterated Optimization" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Reiterated Optimization</h4><p>Performed high-resolution 0.1 mm step fine-tuning on AISI 4130 Steel to isolate the true global minimum.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">05</div>
+            <div class="step-img-box"><img src="./Images/final_stress.png" alt="Final Validation" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>Final Validation &amp; Dimensions</h4><p>Established the final optimal 11.4 mm wall thickness, achieving a 13% reduction in max stress and an 11% reduction in max strain compared to original baseline dimensions, validating stress and strain distributions against yield safety limits.</p></div>
+          </div>
+        </div>
+      </div>
+      <footer class="print-page-footer"><span>Ishaan Patel • Detailed Engineering Project Reports</span><span>Page 2 of 4</span></footer>
+    </div>
+
+    <!-- PAGE 3: PROJECT 3 -->
+    <div class="print-page">
+      <div class="print-page-content">
+        <div class="project-header-block">
+          <p class="project-code">Project 03 • Structure &amp; Characterization of Materials (MSE219)</p>
+          <h2 class="project-title-text">Microstructural Characterization &amp; Crystallography</h2>
+          <div class="tag-container">
+            <span class="tag">Materials Characterization</span><span class="tag">Microscopy</span>
+          </div>
+        </div>
+        <div class="metrics-summary-strip">
+          <div class="metric-item"><div class="metric-val">XRD, SEM, TEM</div><div class="metric-lbl">Microstructural Techniques</div></div>
+        </div>
+        <h3 class="section-heading">Laboratory Workflow &amp; Technical Breakdown</h3>
+        <div class="workflow-list">
+          <div class="workflow-item">
+            <div class="step-num-badge">01</div>
+            <div class="step-img-box"><img src="./Images/xrd-a.png" alt="XRD Analysis" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>1. X-Ray Diffraction (XRD) &amp; Crystallography</h4><p>Utilized a Rigaku MiniFlex 600 diffractometer with Cu-K&alpha; radiation. Processed raw diffraction data and generated calibrated intensity vs. 2&theta; graphs using custom Python scripts (NumPy, Matplotlib), applying Bragg's Law and structure factor calculations to index peaks from 20&deg; to 100&deg; 2&theta; and fingerprint FCC Nickel, BCC Iron, and HCP Cobalt.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">02</div>
+            <div class="step-img-box"><img src="./Images/grainsize-sem.png" alt="SEM Microstructure" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>2. Scanning Electron Microscopy (SEM)</h4><p>Evaluated topography and phase contrast for Cu, NiCo, and Ni-PTFE using an SU7000 SEM with Upper, PDBSE, and Lower detectors. Performed a quantitative 5-line intercept method on Copper PDBSE micrographs to calculate a mean grain size of 0.54 &mu;m.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">03</div>
+            <div class="step-img-box"><img src="./Images/peaks-tem.png" alt="TEM EDS Analysis" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>3. Transmission Electron Microscopy (TEM) &amp; EDS</h4><p>Investigated electrojet-polished Ni-Co thin foils annealed at 200&ndash;400&deg;C using Bright Field (BF), Dark Field (DF), and Selected Area Electron Diffraction (SAED). Acquired Energy-Dispersive X-ray Spectroscopy (EDS) spectra to document microstructural evolution to ordered single-crystal grains at 400&deg;C and applied Cliff-Lorimer quantification to determine alloy composition ratios.</p></div>
+          </div>
+        </div>
+      </div>
+      <footer class="print-page-footer"><span>Ishaan Patel • Detailed Engineering Project Reports</span><span>Page 3 of 4</span></footer>
+    </div>
+
+    <!-- PAGE 4: PROJECT 5 -->
+    <div class="print-page">
+      <div class="print-page-content">
+        <div class="project-header-block">
+          <p class="project-code">Project 04 • Engineering Strategies &amp; Practice II (APS112)</p>
+          <h2 class="project-title-text">Chestnut Residence Mailroom Redevelopment</h2>
+          <div class="tag-container">
+            <span class="tag">Project Management</span>
+          </div>
+        </div>
+        <div class="metrics-summary-strip">
+          <div class="metric-item"><div class="metric-val">60 &rarr; 3</div><div class="metric-lbl">Ideas to Final Options</div></div>
+          <div class="metric-item"><div class="metric-val">125&times;</div><div class="metric-lbl">Amplitude Reduction</div></div>
+        </div>
+        <h3 class="section-heading">Visual Design Workflow</h3>
+        <div class="workflow-list">
+          <div class="workflow-item">
+            <div class="step-num-badge">01</div>
+            <div class="step-img-box"><img src="./Images/stakeholder.png" alt="Stakeholder Mapping" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>1. Problem Definition &amp; Stakeholder Mapping</h4><p>Defined project scope alongside primary client requirements (Residence Wellness Coordinator) and key stakeholders (Chestnut residents, maintenance staff, residence security). Established quantitative objectives for acoustic isolation, thermal regulation, and mood adjustable lighting.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">02</div>
+            <div class="step-img-box"><img src="./Images/sitevisit-drawing.png" alt="Site Visit Audit" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>2. Data Collection via Site Visit</h4><p>Conducted an on-site audit of the Chestnut Residence mailroom to record spatial dimensions, existing structural obstructions, traffic bottlenecks, lighting levels, and ambient noise baselines. This primary data collection directly informed our constraints and acoustic attenuation targets.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">03</div>
+            <div class="step-img-box"><img src="./Images/blackbox.png" alt="Concept Generation" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>3. Functional Analysis &amp; Morphological Synthesis</h4><p>Constructed a Functional Black Box diagram to isolate inputs and energy flows, establishing the primary function: transform underutilized mailroom space into a wellness environment. Built a comprehensive Morphological Chart spanning key secondary functions to generate 60 unique candidate design combinations.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">04</div>
+            <div class="step-img-box"><img src="./Images/multivote.png" alt="Feasibility Screening" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>4. Feasibility Screening &amp; Multi-Voting Filter</h4><p>Subjected all 60 generated concepts to strict physical, structural, and budget constraint checks based on site visit measurements. Applied a 2-stage team multi-voting protocol to filter candidates down to top-performing options for detailed evaluation.</p></div>
+          </div>
+          <div class="workflow-item">
+            <div class="step-num-badge">05</div>
+            <div class="step-img-box"><img src="./Images/pugh.png" alt="Pugh Matrix Selection" onerror="this.style.display='none';"></div>
+            <div class="step-details"><h4>5. Pugh Matrix Evaluation &amp; Final Selection</h4><p>Evaluated candidate designs against established objectives using a Pugh Decision Matrix with Datum comparisons, successfully narrowing down to 3 finalized alternate design options optimized for acoustic privacy and confidentiality.</p></div>
+          </div>
+        </div>
+      </div>
+      <footer class="print-page-footer"><span>Ishaan Patel • Detailed Engineering Project Reports</span><span>Page 4 of 4</span></footer>
+    </div>
+  </div>
+
+  <footer>
+    <span>© <span id="year"></span> Ishaan Patel</span>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // --- PDF DOWNLOAD FUNCTIONALITY ---
+    document.getElementById("downloadPdfBtn").addEventListener("click", () => {
+      window.print();
+    });
+
+    // --- CAROUSEL FUNCTIONALITY ---
+    document.querySelectorAll('.carousel-container').forEach(carousel => {
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      const dots = carousel.querySelectorAll('.dot');
+      const prevBtn = carousel.querySelector('.carousel-btn.prev');
+      const nextBtn = carousel.querySelector('.carousel-btn.next');
+      let currentIndex = 0;
+
+      function updateCarousel(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+        });
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === index);
+        });
+        currentIndex = index;
+      }
+
+      if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          let nextIndex = (currentIndex - 1 + slides.length) % slides.length;
+          updateCarousel(nextIndex);
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          let nextIndex = (currentIndex + 1) % slides.length;
+          updateCarousel(nextIndex);
+        });
+      }
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => updateCarousel(index));
+      });
+    });
+
+    // --- LIGHTBOX IMAGE POPUP FUNCTIONALITY ---
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.querySelector('.lightbox-close');
+
+    document.querySelectorAll('.lightbox-trigger').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxCaption.textContent = img.alt || '';
+        lightbox.showModal();
+      });
+    });
+
+    // --- COMPARISON LIGHTBOX FOR STEP 03 ---
+    const comparisonLightbox = document.getElementById('comparisonLightbox');
+    document.querySelectorAll('.comparison-trigger').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        comparisonLightbox.showModal();
+      });
+    });
+
+    comparisonLightbox.querySelector('.lightbox-close').addEventListener('click', () => comparisonLightbox.close());
+    comparisonLightbox.addEventListener('click', (e) => {
+      const bounds = comparisonLightbox.getBoundingClientRect();
+      if (e.clientX < bounds.left || e.clientX > bounds.right || e.clientY < bounds.top || e.clientY > bounds.bottom) {
+        comparisonLightbox.close();
+      }
+    });
+
+    lightboxClose.addEventListener('click', () => lightbox.close());
+
+    lightbox.addEventListener('click', (e) => {
+      const bounds = lightbox.getBoundingClientRect();
+      if (e.clientX < bounds.left || e.clientX > bounds.right || e.clientY < bounds.top || e.clientY > bounds.bottom) {
+        lightbox.close();
+      }
+    });
+
+    // --- INLINE MODAL DETAILS FUNCTIONALITY ---
+    const openBtns = document.querySelectorAll('.open-modal-btn');
+    const closeBtns = document.querySelectorAll('.modal-close-btn');
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = btn.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.showModal();
+        }
+      });
+    });
+
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = btn.closest('dialog');
+        if (modal) {
+          modal.close();
+        }
+      });
+    });
+
+    document.querySelectorAll('.project-modal').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        const dialogBounds = modal.getBoundingClientRect();
+        if (e.clientX < dialogBounds.left || e.clientX > dialogBounds.right || e.clientY < dialogBounds.top || e.clientY > dialogBounds.bottom) {
+          modal.close();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
